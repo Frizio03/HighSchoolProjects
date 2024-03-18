@@ -1,0 +1,276 @@
+{
+    "1": {
+        "name": "porta",
+        "description": "e' una porta",
+        "color": "blue",
+        "interactions": {
+            "no-item": {
+                "message": "si apre",
+                "move_to_room": 1
+            }
+        }
+    },
+    "2": {
+        "name": "porta",
+        "description": "e' una porta",
+        "color": "blue",
+        "interactions": {
+            "no-item": {
+                "message": "si apre",
+                "move_to_room": 2
+            }
+        }
+    },
+    "3": {
+        "name": "porta",
+        "description": "e' una porta",
+        "color": "blue",
+        "interactions": {
+            "no-item": {
+                "message": "si apre",
+                "move_to_room": 3
+            }
+        }
+    },
+    "4": {
+        "name": "porta",
+        "description": "e' una porta",
+        "color": "blue",
+        "interactions": {
+            "no-item": {
+                "message": "si apre",
+                "move_to_room": 4
+            }
+        }
+    },
+
+    "0": {
+        "name": "porta",
+        "description": "e' una porta",
+        "color": "blue",
+        "interactions": {
+            "no-item": {
+                "message": "si apre",
+                "move_to_room": 0
+            }
+        }
+    },
+
+    "Q": {
+        "name": "quadro",
+        "description": "rappresenta uno dei tanti antenati di Don Rodrigo...",
+        "color": "green",
+        "interactions": {
+            "no-item": {
+                "message": "la persona raffigurata nel quadro ti inquieta"
+            }
+        }
+    },
+
+    "Z": {
+        "name": "divano (erano finite le lettere)",
+        "description": "un soffice divano comprato in offerta la domenica... [pubblicità occulta]",
+        "color": "blue",
+        "interactions": {
+            "no-item": {
+                "message": "cercando tra i cuscini del divano trovi qualcosa di interessante",
+                "transform": "U"
+            }
+        }
+    },
+
+    "V": {
+        "name": "TV",
+        "description": "un modello nuovissimo molto sottile",
+        "color": "black",
+        "interactions": {
+            "no-item": {
+                "message": "non si vede niente"
+            }
+        }
+    },
+
+    "T": {
+        "name": "Tavolo",
+        "description": "un tavolo di legno molto pregiato",
+        "color": "green",
+        "interactions": {
+            "no-item": {
+                "message": "ci sono appoggiate delle carte da briscola"
+            }
+        }
+    },
+
+    "U": {
+        "name": "Benzina",
+        "description": "molto utile per appiccare il fuoco a chissà quale oggetto",
+        "color": "red",
+        "interactions": {
+            "no-item": {
+                "message": "lo raccogli", 
+                "transform": " ", 
+                "pickup": true
+            }
+        }
+    },
+
+    "@": {
+        "name": "Don Abbondio",
+        "description": "Sembra che abbia qualcosa da dirti",
+        "color": "green",
+        "interactions": {
+            "no-item": {
+                "message": "Il tuo obbiettivo è liberarci da un grande male: i Promessi Sposi, distruggilo e liberaci, per favore"
+            }
+        }
+    },
+
+    "M": {
+        "name": "Mobile",
+        "description": "un vecchio armadio contenente molti libri noiosi: senti una oscura presenza...",
+        "color": "magenta",
+        "interactions": {
+            "no-item": {
+                "message": "lo apri e trovi un libro con oscuri poteri",
+                "transform": "L"
+            }
+        }
+    },
+
+    "L": {
+        "name": "Libro dei PS",
+        "description": "un tomo diabolico: distruggilo",
+        "color": "blue",
+        "interactions": {
+            "G": {
+                "message": "brucia al tatto ma grazie ai guanti lo raccogli senza problemi",
+                "transform": " ",
+                "pickup": true
+            },
+            "no-item": {
+                "message": "brucia, brucia, BRUCIA!!!",
+                "game_over": "un potere troppo malefico per essere toccato a mani nude"
+            }
+        }
+    },
+    "K": {
+        "name": "chiave",
+        "description": "e' una piccola chiave",
+        "color": "yellow",
+        "interactions": {
+            "no-item": {
+                "message": "la raccogli",
+                "transform": " ",
+                "pickup": true
+            }
+        }
+    },
+
+    "B": {
+        "name": "Uno dei Bravi",
+        "description": "gli chiedi di giocare",
+        "color": "red",
+        "interactions": {
+            "no-item": {
+                "message": "vinci a briscola con re, tre e asso di briscola nella mano finale",
+                "game_over": "il bravo dice che hai barato e ti uccide, peccato"
+            }
+        }
+    },
+
+    "C": {
+        "name": "Fra Cristoforo",
+        "description": "il frate sempre pronto ad aiutarti",
+        "color": "green",
+        "interactions": {
+            "no-item": {
+                "message": "Cristoforo ti lascia un oggetto che potrebbe tornare utile",
+                "transform": "N"
+            }
+        }
+    },
+
+    "N": {
+        "name": "Nastro di SCOTCH",
+        "description": "molto appiccicoso e resistente",
+        "color": "cyan",
+        "interactions": {
+            "no-item": {
+                "message": "quanto appicica...",
+                "transform": " ",
+                "pickup": true
+            }
+        }
+    },
+
+    "G": {
+        "name": "Guanti",
+        "description": "sembrano molto resistenti",
+        "color": "cyan",
+        "interactions": {
+            "no-item": {
+                "message": "li raccogli...",
+                "transform": " ",
+                "pickup": true
+            }
+        }
+    },
+
+    "P": {
+        "name": "Perpetua",
+        "description": "una chiacchierona di prima categoria",
+        "color": "green",
+        "interactions": {
+            "no-item": {
+                "message": "Le racconti della tua missione ma lei... QUANTO PARLA",
+                "game_over": "Perpetua spiffera a tutti la tua missione segreta e vieni ucciso dai cittadini"
+            },
+            "N": {
+                "message": "Con lo scotch la fai tacere per sempre",
+                "win": "Hai completato una missione secondaria. Complimenti!!"
+            }
+        }
+    },
+
+    "W": {
+        "name": "Bottiglia di vino",
+        "description": "ce ne sono molte in questa stanza",
+        "color": "blue",
+        "interactions": {
+            "no-item": {
+                "message": "Quanto è buono...",
+                "transform": " "
+            }
+        }
+    },
+
+    "I": {
+        "name": "Termovalorizzatore ottimizzante",
+        "description": "Per ridurre l'impronta ecologica",
+        "color": "cyan",
+        "interactions": {
+            "no-item": {
+                "message": "non succede nulla...."
+            },
+            "U": {
+                "message": "versi la benzina dentro al termovalorizzatore",
+                "transform": "+"
+            }
+        }
+    },
+
+    "+": {
+        "name": "Termovalorizzatore acceso",
+        "description": "Pronto a bruciare",
+        "color": "red",
+        "interactions": {
+            "no-item": {
+                "message": "non succede nulla..."
+            },
+            "L": {
+                "message": "Stai per eliminare il male...",
+                "win": "Un'esplosione magnifica, senti una lacrima scorrerti in viso..."
+            }
+        }
+    }
+}

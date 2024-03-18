@@ -1,0 +1,31 @@
+{
+    "0": {
+        "name": "Corridoio",
+        "description": "Cerca dei personaggi che ti aiutino ad uscire",
+        "color": "white"
+    },
+
+    "1": {
+        "name": "Cucina",
+        "description": "C'è molto disordine, il proprietario della casa cucina molto bene",
+        "color": "red"
+    },
+    
+    "2": {
+        "name": "Sala da pranzo",
+        "description": "Un luogo perfetto per rilassarsi e prendere il caffè",
+        "color": "white"
+    },
+
+    "3": {
+        "name": "Cantina",
+        "description": "Wow quanto vino",
+        "color": "white"
+    },
+
+    "4": {
+        "name": "Giardino",
+        "description": "Con un prato verde comprato in offerta la domenica (pubblicità occulta 2)",
+        "color": "green"
+    }
+}
