@@ -1,0 +1,41 @@
+#include <stdio.h>
+#include <assert.h>
+#include <iostream>
+
+using namespace std;
+
+// input data
+int N, risultato;
+char C[10000], L[10000];
+int i=0, count=0;
+
+int main() {
+	//Apertura dei file necessari impostandoli come standard input e standard output
+	freopen("input/6", "r", stdin);
+	freopen("output/6", "w", stdout);
+    
+    //metto i valori della stringa in un vettore fino a quando scanf trova dei caratteri e restituisce 1
+    while(scanf("%c", &C[i])>0)
+    {
+    	//controllo che il valore asci di ogni carattere non sia quello di una vocale
+		if(int(C[i])!=97 && int(C[i])!=101 && int(C[i])!=105 && int(C[i])!=111 && int(C[i])!=117)
+    	{
+    		L[count] = C[i];
+    		//aggiorno un contatore per sapere la lunghezza di L
+			count++;
+		}
+		else
+		{
+			//NOTA che il codice ASCII di * è 42
+			L[count] = char(42);
+			count++;
+		}
+		i++; 
+	}
+	
+	//stampa dell'output su file
+	for(i=0; i<count; i++)
+	{
+		printf("%c", L[i]);
+	}
+}
