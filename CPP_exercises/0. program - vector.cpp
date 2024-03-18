@@ -1,4 +1,3 @@
-<<<<<<< HEAD:0. program - array e matrici e vector.cpp
 //libreria per input ed ouput
 #include <iostream>
 // libreria dei vector
@@ -70,4 +69,3 @@ int main()
 	v.erase(v.begin()+1);
 	
 }
->>>>>>> ba43d71b83c6c1a82e5876301bcf6caa3ae136e2:0. program - vector.cpp
