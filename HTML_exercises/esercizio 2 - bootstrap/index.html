@@ -1,0 +1,113 @@
+<!doctype html>
+<head>
+    <meta charset "UTF-8">
+    <title>Fabrizio Tedeschi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- importazion bootstrap 4 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="miostile.css">
+
+    <style>
+        /*Immagine di sfondo*/
+        body {background-color: rgb(135, 238, 241);}
+
+        /*Classi*/
+        .clearfix:after {content: ""; display: table; clear: both;} /*per andare a capo dopo le foto*/
+        
+        /*definizione stile per galleria foto*/
+        div.gallery {margin: 5px; border: 1px solid #ccc; float: left; width: 180px;}
+        div.gallery:hover {border: 1px solid #777;}
+        div.gallery img {width: 100%; height: auto;}
+        div.desc {padding: 15px; text-align: center; font-family:"Calibri"}
+
+        /*stile tabella per farla asomigliare a due colonne*/
+        table {border-collapse: collapse; width: 100%;}
+        th, td {text-align: left; padding: 8px;}
+        tr:nth-child(even){background-color: #f2f2f2}
+        th {background-color: #4CAF50; color: white;}
+    </style>
+</head>
+
+<body>
+  <div>
+      <h1 class=title><font color=red><i>LA MIA PAGINA WEB</i></font></h1>
+      
+      <h2 class=title><font color=blue>La mia vacanza: Lago di Garda</font></h2>
+      
+      <h3 class=subtitle>Descrizione</h3>
+      <p class=paragraph>Il lago di Garda è il lago glaciale più grande di tutta Italia. Assolutamente da visitare.</p>
+      
+      <h3 class=subtitle>Foto</h3>
+      
+    <!-- Bootstrap per griglia -->
+    <div class="row">
+      <div class="col-sm-4"><center><img src="sirmione.jpg" width="200" height="120" alt="sirmione"/></center></div>
+      <div class="col-sm-4"><center><img src="riva-garda.jpg" width="200" height="120" alt="riva-del-garda"/></center></div>
+      <div class="col-sm-4"><center><img src="Gardaland.jpg" width="200" height="120" alt="Gardaland"/></center></div>
+    </div>
+      
+      <!-- Bootstrap per colonne -->
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <br/>
+            <center><h3 class=subtitle>Luoghi</h3></center>
+              <ul class=list-group>
+                <li class=list-group-item>Sirmione</li>
+                <li class=list-group-item>Gardaland</li>
+                <li class=list-group-item>San Martino</li>
+                <li class=list-group-item>Riva del Garda</li>
+              </ul>
+          </div>
+          <div class="col-sm-6">
+            <br/>
+            <center><h3 class=subtitle>Attività</h3></center>
+              <ol class=list-group>
+                <li class=list-group-item>Esplorazioni in bici</li>
+                <li class=list-group-item>Visite a posti famosi del luogo</li>
+                <li class=list-group-item>Piscina</li>
+                <li class=list-group-item>Relax e divertimento</li>
+              </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <br/>
+    <h2 class=title><font color=blue>I miei hobby</font></h2> <br/>
+    
+    <!-- Bootstrap per griglia -->
+    <div class="row">
+      <div class="col-sm-4"><center><img src="carte2.jpg" width="120" height="90" alt="carte"/></center></div>
+      <div class="col-sm-4"><center><img src="cilindro.png" width="70" height="70" alt="Cilindro"/></center></div>
+      <div class="col-sm-4"><center><img src="foulards.jpg" width="100" height="100" alt="Foulards"/></center></div>
+    </div>
+
+    <h3 class=subtitle>Descrizione</h3>
+    <p class=paragraph>
+      Adoro andare a fare GIRI IN BICICLETTA ed esplorare nuovi luoghi durate le giornate soleggiate.
+      <br/> Durante l'inverno o quando piove mi piace imparare dei TRUCCHI DI MAGIA per poter divertire le persone.
+    </p>
+    
+    <h2 class=title><font color=blue>Link Utili</font></h2> <br/>
+    
+    <!-- Bootstrap per griglia -->
+    <div class="row">
+      <div class="col-sm-4"><a href="https://www.google.it" target="_blank"><center><button type="button" class="btn btn-warning">GOOGLE</button></center></a></div>
+      <div class="col-sm-4"><a href="https://www.google.com/intl/it/gmail/about/" target="_blank"><center><button type="button" class="btn btn-warning">GMAIL</button></center></a></div>
+      <div class="col-sm-4"><a href="https://www.google.com/drive/" target="_blank"><center><button type="button" class="btn btn-warning">DRIVE</button></center></a></div>
+    </div>
+    <br/>
+    <br/>
+  </div>
+
+  <div class="alert alert-dark alert-dismissible fade show">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <center><strong>Alert!</strong> : webpage created by <i>Frizio03</i> on <a href="https://github.com/" target="_blank" class="alert-link">GitHub</a></center>
+  </div>
+
+</body>

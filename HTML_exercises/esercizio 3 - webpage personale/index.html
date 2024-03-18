@@ -1,0 +1,115 @@
+<!doctype html>
+<head>
+    <meta charset "UTF-8">
+    <title>Frizio03 page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- importazione bootstrap 4 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="miostile.css">
+
+    <style>
+        /*Immagine di sfondo*/
+        body {background-color: rgb(255, 255, 255);}
+
+        /*Classi*/
+        .clearfix:after {content: ""; display: table; clear: both;} /*per andare a capo dopo le foto*/
+        
+        /*definizione stile per galleria foto*/
+        div.gallery {margin: 5px; border: 1px solid #ccc; float: left; width: 180px;}
+        div.gallery:hover {border: 1px solid #777;}
+        div.gallery img {width: 100%; height: auto;}
+        div.desc {padding: 15px; text-align: center; font-family:"Calibri"}
+
+        /*stile tabella per farla asomigliare a due colonne*/
+        table {border-collapse: collapse; width: 100%;}
+        th, td {text-align: left; padding: 8px;}
+        tr:nth-child(even){background-color: #f2f2f2}
+        th {background-color: #4CAF50; color: white;}
+
+        /* Make the image fully responsive */
+        .carousel-inner img {
+          width: 100%;
+          height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+  <!-- Navabar -->
+  <div>
+    <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="./index.html">Frizio03</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="vacanza.html">Vacanze</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="hobby.html">Hobby</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contatti.html">Contatti</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="test.html">Test <span class="badge badge-danger">New</span> </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  </br>
+  
+  <!-- Jumbotron -->
+  <div class="jumbotron">
+    <h1><center>WELCOME to <bold>Frizio03</bold> Webpage</center></h1>
+    <p><center>Ciao! Benvenuto nella mia pagina web personale! Scopri dove ho passato l'estate e quali sono i miedi hobby!</center></p>
+  </div>
+
+  <!-- Bootstrap per griglia -->
+    <div class="row">
+      <div class="col-sm-3">
+      </div>
+      <div class="col-sm-3">
+        <div class="card mb-4 box-shadow">
+          <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="vacanze.jpg" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+          <div class="card-body">
+            <h3 class="card-text">Vacanze</h3>
+            <p class="card-text">Scopri come e dove ho passato l'estate 2019.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div>
+                <a href="./vacanza.html" class="btn btn-info" role="button">Scopri di più</a>
+              </div>
+              <small class="text-muted">Estate 2019</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card mb-4 box-shadow">
+          <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="Hobby.jpg" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+          <div class="card-body">
+            <h3 class="card-text">Hobby</h3>
+            <p class="card-text">Scopri quali sono i miei passatempi preferiti.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div>
+                <a href="./hobby.html" class="btn btn-info" role="button">Scopri di più</a>
+              </div>
+              <small class="text-muted">Sempre</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+      </div>
+    </div>
+    <br/>
+    <div class="alert alert-primary alert-dismissible fade show">
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+      <center><strong>Alert!</strong> : webpage created by <i>Frizio03</i> on <a href="https://github.com/" target="_blank" class="alert-link">GitHub</a></center>
+    </div>
+    <br/>
+  </div>
+</body>

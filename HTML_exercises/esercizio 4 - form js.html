@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<head>
+    <meta charset "UTF-8">
+    <title>Frizio03 page - test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- importazione bootstrap 4 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="miostile.css">
+
+    <style>
+        /*Immagine di sfondo*/
+        body {background-color: rgb(255, 255, 255);}
+
+        /*Classi*/
+        .clearfix:after {content: ""; display: table; clear: both;} /*per andare a capo dopo le foto*/
+        
+        /*definizione stile per galleria foto*/
+        div.gallery {margin: 5px; border: 1px solid #ccc; float: left; width: 180px;}
+        div.gallery:hover {border: 1px solid #777;}
+        div.gallery img {width: 100%; height: auto;}
+        div.desc {padding: 15px; text-align: center; font-family:"Calibri"}
+
+        /*stile tabella per farla asomigliare a due colonne*/
+        table {border-collapse: collapse; width: 100%;}
+        th, td {text-align: left; padding: 8px;}
+        tr:nth-child(even){background-color: #f2f2f2}
+        th {background-color: #4CAF50; color: white;}
+
+        /* Make the image fully responsive */
+        .carousel-inner img {
+          width: 100%;
+          height: 100%;
+        }
+    </style>
+</head>
+
+<html>
+<body>
+  <!-- Navabar -->
+  <div>
+    <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href=#>Test <span class="badge badge-danger">New</span> </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  </br>
+  
+  <!-- Jumbotron -->
+  <div class="jumbotron">
+    <h1><center>Il mio sito ti saluta!</center></h1>
+    <p><center>Compila il form qui sotto e interagisci con il mio sito internet grazie allo script</center></p>
+    <h2><center><span class="badge badge-pill badge-info">Forza! Esegui un test!</span></center></h2>
+  </div>
+
+  <!-- Form -->
+  <div>
+      <div class="form-group">
+        <label for="nome">Nome:</label>
+        <input type="text" class="form-control" id="nome" placeholder="Mario">
+      </div>
+      <div class="form-group">
+        <label for="cognome">Cognome:</label>
+        <input type="text" class="form-control" id="cognome" placeholder="Rossi">
+      </div>
+      <div class="form-group">
+        <label for="anni">Anni:</label>
+        <input type="number" class="form-control" id="anni" placeholder="36">
+      </div>
+      <div class="form-group">
+        <label for="city">Città:</label>
+        <input type="text" class="form-control" id="city" placeholder="Roma">
+      </div>
+      <center><button onclick="saluta()" class="btn btn-success">Avvia!</button></center>
+  </div>
+
+  <div>
+    <br/>
+      <div class="alert alert-primary alert-dismissible fade show">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        <center><strong>Alert!</strong> : webpage created by <i>Frizio03</i> on <a href="https://github.com/" target="_blank" class="alert-link">GitHub</a></center>
+      </div>
+    <br/>
+    <center><div class="alert alert-success alert-dismissible fade show" id="saluto">
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+    </div></center>
+  <br/>
+  </div>
+
+  <p id="saluto"></p>
+
+  <script>
+    function saluta() {
+      var nome = document.getElementById("nome").value;
+      var cognome = document.getElementById("cognome").value;
+      var anni = document.getElementById("anni").value;
+      var city = document.getElementById("city").value;
+      if(anni < 18){
+        document.getElementById("saluto").innerHTML = "Ciao " + nome + " " + cognome + ". Sei nato a " + city + " e hai " + anni + " anni quindi sei minorenne.";
+      }
+      else{
+        document.getElementById("saluto").innerHTML = "Ciao " + nome + " " + cognome + ". Sei nato a " + city + " e hai " + anni + " anni quindi sei maggiorenne.";
+      }
+    }
+  </script>
+
+</body>
+</html>

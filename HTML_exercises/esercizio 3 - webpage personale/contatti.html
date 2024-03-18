@@ -1,0 +1,115 @@
+<!doctype html>
+<head>
+    <meta charset "UTF-8">
+    <title>Frizio03 page - contatti</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- importazione bootstrap 4 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="miostile.css">
+
+    <style>
+        /*Immagine di sfondo*/
+        body {background-color: rgb(255, 255, 255);}
+
+        /*Classi*/
+        .clearfix:after {content: ""; display: table; clear: both;} /*per andare a capo dopo le foto*/
+        
+        /*definizione stile per galleria foto*/
+        div.gallery {margin: 5px; border: 1px solid #ccc; float: left; width: 180px;}
+        div.gallery:hover {border: 1px solid #777;}
+        div.gallery img {width: 100%; height: auto;}
+        div.desc {padding: 15px; text-align: center; font-family:"Calibri"}
+
+        /*stile tabella per farla asomigliare a due colonne*/
+        table {border-collapse: collapse; width: 100%;}
+        th, td {text-align: left; padding: 8px;}
+        tr:nth-child(even){background-color: #f2f2f2}
+        th {background-color: #4CAF50; color: white;}
+
+        /* Make the image fully responsive */
+        .carousel-inner img {
+          width: 100%;
+          height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+  <!-- Navabar -->
+  <div>
+    <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="./index.html">Frizio03</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="vacanza.html">Vacanze</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="hobby.html">Hobby</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contatti.html">Contatti</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="test.html">Test <span class="badge badge-danger">New</span> </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  </br>
+  
+  <!-- Jumbotron -->
+  <div class="jumbotron">
+    <h1><center>Contatti</center></h1>
+    <p><center>Compila il form qui soto per contattarmi! Ti rispondero via mail!</center></p>
+    <p><center>Oppure clicca sul bottone sottostante e raggiungi il mio profilo GitHub</center></p>
+    <div>
+      <center><a href="https://github.com/Frizio03" target="_blank" class="btn btn-primary" role="button">GitHub</a></center>
+    </div>
+  </div>
+
+  <!-- Form -->
+  <div>
+    <form>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text">Name</span>
+        </div>
+        <input type="text" class="form-control">
+      </div>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text">Surname</span>
+        </div>
+        <input type="text" class="form-control">
+      </div>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text">Email addres</span>
+        </div>
+        <input type="text" class="form-control">
+      </div>
+      <div>
+        <center><a href="#" class="btn btn-success" role="button">Submit</a></center>
+      </div>
+    </form>
+  </div>
+
+  <div>
+    <br/>
+      <div class="alert alert-warning alert-dismissible fade show">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        <center><strong>ATTENZIONE:</strong> a causa di un imprevisto cliccando sul pulsante "submit" non accade nulla</center>
+      </div>
+      <div class="alert alert-primary alert-dismissible fade show">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        <center><strong>Alert!</strong> : webpage created by <i>Frizio03</i> on <a href="https://github.com/" target="_blank" class="alert-link">GitHub</a></center>
+      </div>
+    <br/>
+  </div>
+
+</body>

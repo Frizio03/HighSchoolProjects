@@ -1,0 +1,150 @@
+<!doctype html>
+<head>
+    <meta charset "UTF-8">
+    <title>Frizio03 page - vacanze</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- importazione bootstrap 4 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="miostile.css">
+
+    <style>
+        /*Immagine di sfondo*/
+        body {background-color: rgb(255, 255, 255);}
+
+        /*Classi*/
+        .clearfix:after {content: ""; display: table; clear: both;} /*per andare a capo dopo le foto*/
+        
+        /*definizione stile per galleria foto*/
+        div.gallery {margin: 5px; border: 1px solid #ccc; float: left; width: 180px;}
+        div.gallery:hover {border: 1px solid #777;}
+        div.gallery img {width: 100%; height: auto;}
+        div.desc {padding: 15px; text-align: center; font-family:"Calibri"}
+
+        /*stile tabella per farla asomigliare a due colonne*/
+        table {border-collapse: collapse; width: 100%;}
+        th, td {text-align: left; padding: 8px;}
+        tr:nth-child(even){background-color: #f2f2f2}
+        th {background-color: #4CAF50; color: white;}
+
+        /* Make the image fully responsive */
+        .carousel-inner img {
+          width: 100%;
+          height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+  <!-- Navabar -->
+  <div>
+    <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="./index.html">Frizio03</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="vacanza.html">Vacanze</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="hobby.html">Hobby</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contatti.html">Contatti</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="test.html">Test <span class="badge badge-danger">New</span> </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  </br>
+  
+  <!-- Jumbotron -->
+  <div class="jumbotron">
+    <h1><center>La mia estate 2019</center></h1>
+    <p><center>In questa pagina potrai scopire come ho trascorso l'estate 2019. Clicca il bottone qui sotto e scopri di più!</center></p>
+    <!--collapse-->
+    <div>
+      <center><button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Scopri</button></center>
+      <center><div id="demo" class="collapse">
+        Il lago di Garda è il lago glaciale più grande di tutta Italia. Assolutamente da visitare.
+        Qui puoi visitare diverse attrazioni (Gradaland), assistere a spettacoli e conoscere anche luoghi storici!
+        Visita anche tu il lago di Garda!!!!!
+      </div></center>
+    </div>
+  </div>
+
+  <!-- Bootstrap per griglia -->
+    <div class="row">
+      <div class="col-sm-3">
+        <div class="card mb-4 box-shadow">
+          <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="sirmione.jpg" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+          <div class="card-body">
+            <h3 class="card-text">Sirmione</h3>
+            <p class="card-text">Famoso per il suo castello che funge da ingresso al centro storico della città.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div>
+                <a href="https://www.comune.sirmione.bs.it/" target="_blank" class="btn btn-info" role="button">Scopri di più</a>
+              </div>
+              <small class="text-muted">Luglio 2019</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card mb-4 box-shadow">
+          <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="gardaland.jpg" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+          <div class="card-body">
+            <h3 class="card-text">Gardaland</h3>
+            <p class="card-text">Il miglior parco divertimentio d'Italia vicino al lago.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div>
+                <a href="https://www.gardaland.it/" target="_blank" class="btn btn-info" role="button">Scopri di più</a>
+              </div>
+              <small class="text-muted">Luglio 2019</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card mb-4 box-shadow">
+          <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="san-martino.jpg" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+          <div class="card-body">
+            <h3 class="card-text">San Martino</h3>
+            <p class="card-text">Luogo della famosa battaglia storica è sede della torre visitabile.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div>
+                <a href="https://it.wikipedia.org/wiki/San_Martino_della_Battaglia" target="_blank" class="btn btn-info" role="button">Scopri di più</a>
+              </div>
+              <small class="text-muted">Agosto 2019</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card mb-4 box-shadow">
+          <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="riva-garda.jpg" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+          <div class="card-body">
+            <h3 class="card-text">Riva del Garda</h3>
+            <p class="card-text">Uno dei luoghi migliori per fare un bagno nel lago.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div>
+                <a href="https://www.comune.rivadelgarda.tn.it/" target="_blank" class="btn btn-info" role="button">Scopri di più</a>
+              </div>
+              <small class="text-muted">Agosto 2019</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br/>
+    <div class="alert alert-primary alert-dismissible fade show">
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+      <center><strong>Alert!</strong> : webpage created by <i>Frizio03</i> on <a href="https://github.com/" target="_blank" class="alert-link">GitHub</a></center>
+    </div>
+    <br/>
+  </div>
+</body>

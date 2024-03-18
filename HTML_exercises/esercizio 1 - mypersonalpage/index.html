@@ -1,0 +1,125 @@
+<!doctype html>
+<head>
+    <meta charset "UTF-8">
+    <title>Fabrizio Tedeschi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="miostile.css">
+
+    <style>
+        /*Immagine di sfondo*/
+        body {background-color: rgb(135, 238, 241);}
+
+        /*Classi*/
+        .clearfix:after {content: ""; display: table; clear: both;} /*per andare a capo dopo le foto*/
+        /*definizione stile per id -- gestione liste*/
+        #places {list-style-type: upper-roman; font-size: 20px; font-family:"Calibri"}
+        #activities {list-style-type: lower-alpha; font-size: 20px; font-family:"Calibri"}
+        
+        /*definizione stile per galleria foto*/
+        div.gallery {margin: 5px; border: 1px solid #ccc; float: left; width: 180px;}
+        div.gallery:hover {border: 1px solid #777;}
+        div.gallery img {width: 100%; height: auto;}
+        div.desc {padding: 15px; text-align: center; font-family:"Calibri"}
+
+        /*stile tabella per farla asomigliare a due colonne*/
+        table {border-collapse: collapse; width: 100%;}
+        th, td {text-align: left; padding: 8px;}
+        tr:nth-child(even){background-color: #f2f2f2}
+        th {background-color: #4CAF50; color: white;}
+    </style>
+</head>
+
+<body>
+  <div>  
+    <h1 class=title><font color=red><i>LA MIA PAGINA WEB</i></font></h1>
+      
+      <h2 class=title><font color=blue>La mia vacanza: Lago di Garda</font></h2>
+      
+      <h3 class=subtitle>Descrizione</h3>
+      <p class=paragraph>Il lago di Garda è il lago glaciale più grande di tutta Italia. Assolutamente da visitare.</p>
+      
+      <h3 class=subtitle>Foto</h3>
+      
+      <div>
+      <div class="gallery">
+          <a target="_blank" href="sirmione.jpg">
+            <img src="sirmione.jpg" alt="Sirmione" width="600" height="400">
+          </a>
+          <div class="desc">Sirmione</div>
+        </div>
+        
+        <div class="gallery">
+          <a target="_blank" href="gardaland.jpg">
+            <img src="gardaland.jpg" alt="Gardaland" width="600" height="400">
+          </a>
+          <div class="desc">Gardaland</div>
+        </div>
+        
+        <div class="gallery">
+          <a target="_blank" href="san-martino.jpg">
+            <img src="san-martino.jpg" alt="San Martino" width="600" height="400">
+          </a>
+          <div class="desc">Torre si San Martino</div>
+        </div>
+        
+        <div class="gallery">
+          <a target="_blank" href="riva-garda.jpg">
+            <img src="riva-garda.jpg" alt="Riva del Garda" width="600" height="400">
+          </a>
+          <div class="desc">Riva del Garda</div>
+        </div>
+      <div class="clearfix"></div>
+
+      <h3 class=subtitle>Luoghi</h3>
+      <ol id=places>
+          <li>Sirmione</li>
+          <li>Gardaland</li>
+          <li>San Martino</li>
+          <li>Riva del Garda</li>
+      </ol>
+      
+      <h3 class=subtitle>Attività</h3>
+      <ol id=activities>
+          <li>Esplorazioni in bici</li>
+          <li>Visite a posti famosi del luogo</li>
+          <li>Piscina, relax e divertimento</li>
+      </ol>
+  </div>
+
+  <div>
+    <h2 class=title><font color=blue>I miei hobby</font></h2>
+    
+    <center><img src="cilindro.png" width="50" height="50" alt="Cilindro"/></center>
+    
+    <h3 class=subtitle>Descrizione</h3>
+    <p class=paragraph>
+      Adoro andare a fare GIRI IN BICICLETTA ed esplorare nuovi luoghi durate le giornate soleggiate.
+      <br/> Durante l'inverno o quando piove mi piace imparare dei TRUCCHI DI MAGIA per poter divertire le persone.
+    </p>
+    
+    <h2 class=title><font color=blue>Link Utili</font></h2>
+    <table>
+      <thead>
+          <tr>
+              <th>Nome sito</th> <th>Link</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td>Google</td> <td><a href="https://www.google.it" target="_balank">Link a Google su nuova finestra</a></td>
+          </tr>
+          <tr>
+            <td>Gmail</td> <td><a href="https://www.google.com/intl/it/gmail/about/" target="_balank">Link a Gmail su nuova finestra</a></td>
+          </tr>
+          <tr>
+            <td>Drive</td> <td><a href="https://www.google.com/drive/" target="_balank">Link a Drive su nuova finestra</a></td>
+          </tr>
+      </tbody>
+  </table>
+
+  </div>
+
+</body>
