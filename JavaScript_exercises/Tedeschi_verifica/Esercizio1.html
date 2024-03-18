@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <script src = "./utils.js"></script>
+        <script>
+            //dichiarazione variabili
+            let E = inserisciIntero("Inserire ETA' fra 18 e 100", 18, 100)
+            let i
+            let E2
+            let nMaggiorenni = 0
+            //Esercizio
+            for(i=0; i<20; i++){
+                E2 = inserisciIntero("Inserire ETA' fra 0 e 100", 0, 100)
+                confronto(E2, E)
+                maggiorenne(E2)
+                if(maggiorenne(E2) === true){
+                    console.log("ETA' inserita risulta MAGGIORENNE")
+                    nMaggiorenni++
+                }
+                else{
+                    console.log("ETA' inserita risulta MINORENNE")
+                }
+                multiplodi(E2, E)
+            }
+            
+            //stampa percentuale maggiorenni su valori inseriti
+            console.log("I maggiorenni sono il " + percentualeMaggiorenni(nMaggiorenni, 20) + " % dei valori inseriti")
+        </script>
+    </head>
+</html>

@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <script src = "./script.js"></script>
+        <script>
+            let N = inserisciIntero("Inserire valore N > 0", 0, Infinity)
+            let i, x
+            let lista = [];
+            let countDispari = 0
+            let countPrimi = 0
+            for(i=0; i<N; i++){
+                x = inserisciIntero("Inserire valore fra 40 e 120", 40, 120)
+                lista.push(x)
+                if(isPari(x) === false){countDispari++}
+                if(isPrimo(x) === true){countPrimi++}
+            }
+            alert("Hai inserito " + countDispari + " numeri dispari")
+            alert("Hai inserito " + countPrimi + " numeri primi")
+        </script>
+    </head>
+</html>

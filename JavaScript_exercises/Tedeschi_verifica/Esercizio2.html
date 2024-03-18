@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <script>
+            "use strict"
+            
+            //stesura funzioni
+            const inserisciIntero = (messaggio, min, max) => {
+                let numero
+                do{
+                    numero = +prompt(messaggio)
+                } while(numero<min || numero>max)
+                return numero
+            }
+
+            const stampaDivisori = (V) => {
+                let lista = [];
+                let i
+                for(i=1; i<=V; i++){
+                    if(V%i===0){
+                        lista.push(i)
+                    }
+                }
+                alert("I divisori di " + V + " sono " + lista)
+            }
+
+            //dichiarazione variabili
+            let N = inserisciIntero("Inserisci N compreso fra 1 e 30", 1, 30)
+            let count
+            let valore
+            
+            //Esercizio
+            for(count=0; count<N; count++){
+                valore = inserisciIntero("Inserire numero INT", 0, Infinity)
+                let j
+                for(j=1; j<=valore; j++){
+                    stampaDivisori(j)
+                }
+            }
+
+        </script>
+    </head>
+</html>

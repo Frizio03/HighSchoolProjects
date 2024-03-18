@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <script src = "./script.js"></script>
+        <script>
+            let V = 10
+            let listaN = [];
+            let count = 0
+            let numero
+            //media
+            do{
+                numero = inserisciIntero("Inserire INT idoneo", -50, 50)
+                listaN.push(numero)
+                count++
+            }while(count < V)
+            alert("La media dei numeri inseriti: " + media(listaN, V))
+            //stampa % pari
+            let countPari = 0
+            let i
+            for(i=0; i<V; i++){
+                if(isPari(listaN[i]) === true){countPari++}
+            }
+            alert("Il " + 100*countPari/V + "% dei numeri inseriti è pari")
+        </script>
+    </head>
+</html>

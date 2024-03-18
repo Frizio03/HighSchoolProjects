@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <script src = "./script.js"></script>
+        <script>
+            //Esercizio 3
+            let k = inserisciIntero("Numero compreso fra 0 e 1000", 0, 1000)
+            let nDiv = stampaDivisori(k)
+            let isPrimo = (nDiv !== 2) ?
+                () => alert("il numero inserito risulta NON PRIMO") :
+                () => alert("il numero inserito risulta PRIMO");
+            isPrimo()
+        </script>
+    </head>
+</html>

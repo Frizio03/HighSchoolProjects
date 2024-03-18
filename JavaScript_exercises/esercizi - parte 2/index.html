@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <script src = "./script.js"> </script>
+        <script>
+            //Esercizio 1
+            let boolean = InserisciIntero("Ciao mare inserisci:", 0, 10)
+            alert(boolean)
+            //Esercizio 2
+            alert("EQUAZIONE DI SECONDO GRADO")
+            Equazione()
+            //Esercizio 3
+            let a
+            let b
+            do{
+                a = +prompt("Inserisci valore A")
+                b = +prompt("Inserisci valore B")
+                //alert("Condizione: A > B")
+            }while(a > b)
+            let k = +prompt("Inserisci valore K")
+            alert("il numero MAGGIORE: " + maggiore(a, b))
+            alert("il numero MINORE: " + minore(a, b))
+            alert("Somma Intervallo: " + sommaIntervallo(a, b))
+            alert("Prodotto Intervallo: " + prodottoIntervallo(a, b))
+            let mialista = [];
+            mialista = stampaMultipliIntervallo(a, b, k)
+            alert(mialista)
+        </script>
+    </head>
+    <body>
+        <h1>Esercizio 1</h1>
+        <p>
+            Creare una funzione "inserisci intero" che data una stringa da visualizzare, un minimo ed un massimo richieda all'utente un valore in quel range
+        </p>
+        <h1>Esercizio 2</h1>
+        <p>
+            Riprogettare l'esercizio 3  della scorsa volta (riportato qui sotto) con le funzioni che si ritengono più appropriate.
+            
+            Testo: chiedere 3 valori “a”, “b”, “c” che rappresentano i coefficienti di una generica equazione di 2° grado (check a != 0).
+            Calcolare il delta e mostrarlo. Se esistono, calcolare le due soluzioni. Dire se sono distinte o meno.
+        </p>
+        <h1>Esercizio 3</h1>
+        <p>
+            Chiedere all'utente 2 valori A e B e un terzo valore K e stampare:
+                - Il maggiore
+                - Il minore
+                - La somma dei valori da A a B
+                - Il prodotto dei valori tra A e B pari
+                - Tutti i valori tra A e B multipli di K
+        </p>
+    </body>
+</html>
