@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Signup</title>
+    <link rel="icon" href="/img/lock.png">
+    <link rel="stylesheet" href="/public/css/styles.css">
+</head>
+<body>
+    <div class="main-content">
+        {{>header}}
+    
+    <br>
+    <br>
+
+    <div class="list-group">
+    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+        <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">{{email}}</h5>
+        </div>
+        <p class="mb-1"> Email </p>
+    </a>
+    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+        <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">{{firstName}}</h5>
+        </div>
+        <p class="mb-1">First Name</p>
+    </a>
+    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+        <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">{{lastName}}</h5>
+        </div>
+        <p class="mb-1">Last Name</p>
+    </a>
+    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+        <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">{{city}}</h5>
+        </div>
+        <p class="mb-1">City</p>
+    </a>
+    </div>
+    <br>
+    <center><a href="/"><button type="button" class="btn btn-outline-danger">Logout</button></a></center>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Error</title>
+    <link rel="icon" href="/img/lock.png">
+    <link rel="stylesheet" href="/public/css/styles.css">
+</head>
+
+<body>
+    <div class="main-content">
+        {{>header}}
+
+        <br>
+
+        <div class="alert alert-danger" role="alert" style="text-align: center">
+        {{errorMessage}} - <a href="/login">Try again</a> or <a href="/signup">signup</a> !
+        </div>
+
+    </div>
+</body>
+
+</html>

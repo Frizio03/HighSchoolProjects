@@ -1,0 +1,8 @@
+ADMIN_USER=admin
+ADMIN_PASSWORD=admin
+
+PASSWORD=samplepsw
+USER=sampleuser
+MYSQL_DB="test"
+MYSQL_HOST=localhost
+MSQL_PORT=3306
