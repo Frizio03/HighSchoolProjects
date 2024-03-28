@@ -1,4 +1,4 @@
-#Consegne degli esercizi con le STRINGHE
+# Consegne degli esercizi con le STRINGHE
 
 ## Esercizio 1
 Dato un testo restituiscilo senza le vocali (y è una vocale nell'alfabeto inglese).
